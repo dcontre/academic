@@ -16,9 +16,15 @@ publication_types:
 publication: '*Journal of Eastern Mediterranean Archaeology and Heritage Studies*'
 abstract: This article provides the first detailed overview of Middle Paleolithic
   activity at the Naxian chert source of Stelida, based on an analysis of 780 artifacts
-  collected from the 2013--2014 survey. While several Eurasian Middle Paleolithic
+  collected from the 2013-2014 survey. While several Eurasian Middle Paleolithic
   lithic sources have been documented, the activity at most of these sites relates
   almost exclusively to resource extraction and the initial stages of tool production.
   The Middle Paleolithic material from Stelida reflects a wider range of hominin behavior,
-  including not only evidence for various knapping traditions (not least dots
+  including not only evidence for various knapping traditions (not least Levallois and discoidal core technologies) but also two concentrations of target products, including retouched tool types. The article argues that this greater breadth of practice relates to Stelida’s landscape affordances, namely the presence of springs and rock shelters that facilitated the establishment of seasonal camps, where those procuring chert likely engaged in food preparation, consumption, and tool maintenance.
+doi: https://doi.org/10.5325/jeasmedarcherstu.13.1-2.0032
+tags: 
+- Naxos
+- SNAP
+- Aegean Paleolithic
+- quarry archaeology
 ---
