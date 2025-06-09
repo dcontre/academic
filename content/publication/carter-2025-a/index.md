@@ -24,7 +24,7 @@ abstract: This article provides the first detailed overview of Middle Paleolithi
 doi: https://doi.org/10.5325/jeasmedarcherstu.13.1-2.0032
 tags: 
 - Naxos
-- SNAP
+- lithics
 - Aegean Paleolithic
 - quarry archaeology
 ---
