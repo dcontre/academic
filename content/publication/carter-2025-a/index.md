@@ -3,8 +3,8 @@ title: Middle Paleolithic Behavioral Insights from the Stelida Chert Source, Nax
   (Greece)
 authors:
 - Tristan Carter
-- Daniel A Contreras
-- Danica D Mihailović
+- Daniel A. Contreras
+- Danica D. Mihailović
 - Theodora Moutsiou
 - Yorgan Pitt
 - Natasha Singh
