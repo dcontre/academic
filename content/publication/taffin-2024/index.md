@@ -5,8 +5,8 @@ authors:
 - Ninon Taffin
 - Christelle Lahaye
 - Daniel A. Contreras
-- Justin A Holcomb
-- Danica D Mihailovic
+- Justin A. Holcomb
+- Danica D. Mihailovic
 - Panagiotis Karkanas
 - Guillaume Guérin
 - Demetris Athanasoulis
