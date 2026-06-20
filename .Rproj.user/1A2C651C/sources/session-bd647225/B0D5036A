@@ -1,26 +1,24 @@
 {
-    "id": "EE8E053A",
-    "path": "~/Documents/GitHub/theme-academic-cv/content/_index.md",
-    "project_path": "content/_index.md",
+    "id": "B0D5036A",
+    "path": "~/Documents/GitHub/theme-academic-cv/content/publications/contreras-2026/index.md",
+    "project_path": "content/publications/contreras-2026/index.md",
     "type": "markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1717106091819.0,
+    "created": 1781963008408.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "source_window_id": "",
-        "Source": "Source",
-        "cursorPosition": "5,0",
-        "scrollLine": "0"
+        "Source": "Source"
     },
     "folds": "",
-    "lastKnownWriteTime": 1781962906,
+    "lastKnownWriteTime": 1781962409,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1781962906,
+    "last_content_update": 1781962409,
     "read_only": false,
     "read_only_alternatives": []
 }
