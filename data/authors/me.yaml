@@ -2,103 +2,94 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
+  display: Dr. Daniel Contreras
+  given: Daniel
+  family: Contreras
   alternate: ''  # Example: 王伟
   pronunciation: ''  # Example: Wáng Wěi
   pronouns: he/him
 postnominals:
   - PhD
-  - MIEEE
 status:
   icon: "☕️"
-role: Senior AI Research Scientist
+role: Associate Professor of Anthropology
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+  Daniel Contreras is an associate professor of Anthropology at the University of Florida. His research interests focus on past human-environment interactions over long timescales.
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: University of Florida
+    url: https://www.ufl.edu/
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:daniel.contreras@ufl.edu
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
   - icon: brands/github
-    url: https://github.com/example
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
+    url: https://github.com/dcontre
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
+    url: https://scholar.google.com/citations?user=Kh1BP9cAAAAJ&hl=en
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0000-0002-8127-8789
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Archaeology of the Central Andes 
+  - Geospatial archaeology 
+  - Landscape archaeology 
+  - Digital archaeology 
 
 education:
-  - degree: PhD Computer Science
+  - degree: PhD Anthropological Sciences
     institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+    start: 2001-09
+    end: 2007-08
     summary: |
       Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+#     button:
+#       text: Download dissertation
+#       url: /resume.pdf
+#       icon: hero/arrow-down-tray
+  - degree: MA Latin American Studies
+    institution: Stanford University
+    start: 1997-09
+    end: 1998-06
+  - degree: BA Religion, Certificate in Latin American Studies
+    institution: Amherst College
+    start: 1992-08
+    end: 1996-05
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
-    summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+  - role: Assistant Professor of Anthropology
+    org: University of Maryland
+    start: 2018
+    end: 2019
+    summary: 
+#     button:
+#       text: View portfolio
+#       url: /
+#       icon: hero/arrow-down-tray
+#   - role: AI Research Intern
+#     org: OpenAI
+#     start: 2019-06-01
+#     end: 2019-12-31
+#     summary: |
 
-skills:
-  - name: Technical Skills
-    items:
-      - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
-        level: 4
-  - name: Research & Communication
-    items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
+# skills:
+#   - name: Technical Skills
+#     items:
+#       - label: Python
+#         level: 5
+#       - label: Machine Learning
+#         level: 5
+#       - label: Cloud Computing
+#         level: 4
+#   - name: Research & Communication
+#     items:
+#       - label: Academic Writing
+#         level: 5
+#       - label: Conference Presentations
+#         level: 4
+#       - label: Grant Proposals
+#         level: 4
 
 languages:
   - name: English
@@ -108,9 +99,9 @@ languages:
     level: 4
     label: Fluent
 
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+# awards:
+#   - title: Best Paper Award
+#     awarder: NeurIPS
+#     date: "2022-12-01"
+#     summary: Awarded for groundbreaking work on efficient training of large models.
+#     icon: hero/trophy
