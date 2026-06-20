@@ -2,7 +2,7 @@
 title: The Chavín Phenomenon and Its Regional Manifestation
 authors:
 - Daniel A. Contreras
-date: '2026'
+date: '2026-05-01'
 publishDate: '2026-05-26T21:11:43.876576Z'
 publication_types:
 - chapter
