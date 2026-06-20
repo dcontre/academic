@@ -126,13 +126,33 @@ jobs:
       id: pages
       uses: actions/configure-pages@v6.0.0
 
-    - name: Build with Hugo
+       - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production
         HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
+
+        # Debug: inspect blox partials that are failing (module cache path)
+        BUILD_LINKS="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"
+        PAGE_LINKS_DIV="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/page_links_div.html"
+
+        echo "== build_links.html (around error) =="
+        if [ -f "$BUILD_LINKS" ]; then
+          nl -ba "$BUILD_LINKS" | sed -n '105,135p'
+        else
+          echo "MISSING: $BUILD_LINKS"
+        fi
+
+        echo "== page_links_div.html (caller context) =="
+        if [ -f "$PAGE_LINKS_DIV" ]; then
+          nl -ba "$PAGE_LINKS_DIV" | sed -n '1,80p'
+        else
+          echo "MISSING: $PAGE_LINKS_DIV"
+        fi
+
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
 
     - name: Generate Pagefind search index (if applicable)
       run: |
