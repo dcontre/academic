@@ -135,19 +135,19 @@ jobs:
 
         # Debug: inspect blox partials that are failing (module cache path)
 
-        BUILD_LINKS="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"
+         BUILD_LINKS="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"
 
-        echo "== build_links.html (lines 45-70) =="
-        python3 - <<'PY'
-        import itertools
-        path = "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"
-        with open(path, "r", encoding="utf-8") as f:
-        for i, line in enumerate(f, start=1):
-          if 45 <= i <= 70:
-            print(f"{i:5d}\t{line.rstrip()}")
-          if i > 70:
-            break
-        PY
+          echo "== build_links.html (lines 45-70) =="
+          python3 -c '
+          path = "'"$BUILD_LINKS"'"
+          with open(path, "r", encoding="utf-8") as f:
+              for i, line in enumerate(f, start=1):
+                  if 45 <= i <= 70:
+                      print(f"{i:5d}\t{line.rstrip()}")
+                  elif i > 70:
+                    break
+          '
+
 
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
