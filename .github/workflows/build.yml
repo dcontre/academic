@@ -151,6 +151,9 @@ jobs:
           echo "MISSING: $PAGE_LINKS_DIV"
         fi
 
+        BUILD_LINKS="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"
+        echo "== build_links.html (lines 35-75) =="nl -ba "$BUILD_LINKS" | sed -n '35,75p'
+
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
 
