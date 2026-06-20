@@ -126,7 +126,7 @@ jobs:
       id: pages
       uses: actions/configure-pages@v6.0.0
 
-       - name: Build with Hugo
+    - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production
         HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}
