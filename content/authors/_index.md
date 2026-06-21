@@ -9,5 +9,5 @@ cascade:
 
 title: Dr.
 role: Associate Professor # ...
-image: avatar.png
+image: daniel-a.-contreras/avatar.png
 ---
