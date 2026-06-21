@@ -134,6 +134,18 @@ jobs:
       run: |    
         set -euo pipefail
         set -x
+
+        
+        echo "Hugo cache dir:"
+        hugo config | grep -i cachedir || true
+        echo "Top of /home/runner/.cache:"
+        ls -la /home/runner/.cache || true
+        echo "Find build_links.html under cache:"
+        find /home/runner/.cache -maxdepth 6 -type f -name 'build_links.html' 2>/dev/null | head -n 20
+        echo "Find kit module path under cache:"
+        find /home/runner/.cache -maxdepth 8 -type d -path '*github.com/!hugo!blox/kit*' 2>/dev/null | head -
+        n 20
+
         echo "WD=$(pwd)"    
         
         TARGET="layouts/_partials/functions/build_links.html"  
