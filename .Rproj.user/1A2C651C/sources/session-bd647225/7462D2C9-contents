@@ -55,7 +55,7 @@ sections:
       columns: 2
   - block: collection
     content:
-      title: All Publications
+      title: Publications
       text: ''
       filters:
         folders:
