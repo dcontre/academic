@@ -1,7 +1,7 @@
 ---
 # Display name
 title: Daniel A. Contreras
-
+slug: "daniel-a.-contreras"
 
 # Full name (for SEO)
 first_name: Daniel
