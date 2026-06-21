@@ -9,14 +9,14 @@ sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: me
+      username: daniel-a.-contreras
       text: ''
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
         url: uploads/cv.pdf
       headings:
-        about: ' '
+        about: 'Bio'
         education: ''
         interests: ''
     design:

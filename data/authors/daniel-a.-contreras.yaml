@@ -2,19 +2,19 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Daniel Contreras
+  display: Daniel A. Contreras
   given: Daniel
   family: Contreras
   alternate: ''  # Example: 王伟
   pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
+  # pronouns: he/him
 postnominals:
   - PhD
 status:
   icon: "☕️"
 role: Associate Professor of Anthropology
 bio: |
-  Daniel Contreras is an anthropological archaeologist and associate professor of Anthropology at the University of Florida. His research interests focus on past human-environment interactions over long timescales.
+  Daniel Contreras is an associate professor of Anthropology at the University of Florida. He is an anthropological archaeologist whose research interests focus on past human-environment interactions over long timescales.
 
 affiliations:
   - name: University of Florida
