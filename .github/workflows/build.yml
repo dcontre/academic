@@ -132,19 +132,11 @@ jobs:
         HUGO_ENVIRONMENT: production    
         HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}  
       run: |    
-        set -euo pipefail
-        set -x
-
-        
-        echo "Hugo cache dir:"
-        hugo config | grep -i cachedir || true
-        echo "Top of /home/runner/.cache:"
-        ls -la /home/runner/.cache || true
-        echo "Find build_links.html under cache:"
-        find /home/runner/.cache -maxdepth 6 -type f -name 'build_links.html' 2>/dev/null | head -n 20
-        echo "Find kit module path under cache:"
-        find /home/runner/.cache -maxdepth 8 -type d -path '*github.com/!hugo!blox/kit*' 2>/dev/null | head -
-        n 20
+        set -euo pipefailecho "Build links in cache:"
+        find /home/runner/.cache/hugo_cache -type f -name 'build_links.html' 2>/dev/null | head -n 20
+        echo "Any kit module dirs in cache:"
+        find /home/runner/.cache/hugo_cache -maxdepth 10 -type d -path '*github.com/!hugo!blox/kit*' 2>/dev/
+        null | head -n 20
 
         echo "WD=$(pwd)"    
         
