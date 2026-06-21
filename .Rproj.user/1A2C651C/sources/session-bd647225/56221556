@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/theme-academic-cv/content/blog/teach-courses/index.md",
     "project_path": "content/blog/teach-courses/index.md",
     "type": "markdown",
-    "hash": "954520156",
+    "hash": "3898977897",
     "contents": "",
     "dirty": false,
     "created": 1782026461567.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "41,2",
-        "scrollLine": "32"
+        "cursorPosition": "37,0",
+        "scrollLine": "26"
     },
     "folds": "",
-    "lastKnownWriteTime": 1782027012,
+    "lastKnownWriteTime": 1782027140,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1782027012169,
+    "last_content_update": 1782027140840,
     "read_only": false,
     "read_only_alternatives": []
 }
