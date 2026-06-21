@@ -137,6 +137,10 @@ jobs:
         echo "WD=$(pwd)"    
         ls -ld . layouts/_partials/functions || true    
         id
+        echo "Repo root: $(pwd)"
+        find . -maxdepth 4 -type d -path "*/layouts/_partials/functions" 2>/dev/null || true
+        find . -maxdepth 4 -type f -name "build_links.html" 2>/dev/null || true
+        ls -la
         TARGET="layouts/_partials/functions/build_links.html"    
         MOD_FILE="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"
         test -f "$MOD_FILE"
