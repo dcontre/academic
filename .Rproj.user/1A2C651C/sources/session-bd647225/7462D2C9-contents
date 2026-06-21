@@ -119,15 +119,17 @@ sections:
     content:
       title: Contact
       text: |-
-        <div style="text-align: left;">
+          <div style="text-align: left;">
         
-        **Email:** [daniel.contreras@ufl.edu](mailto:daniel.contreras@ufl.edu)
-        **Phone:** [+1 352 294 6880](tel:+13522946880)
-        **Office:** B346 Turlington Hall, Gainesville, FL 32605
-        *Looking for B346? Wander the basement of Turlington Hall and hope for the best.*
-        **Office Hours:** Wednesday 13:00–15:00, and by appointment
-        [Book an appointment](https://calendly.com)
-       </div>
+          **Email:** [daniel.contreras@ufl.edu](mailto:daniel.contreras@ufl.edu)
+          **Phone:** [+1 352 294 6880](tel:+13522946880)
+          **Office:** B346 Turlington Hall, Gainesville, FL 32605
+          *Looking for B346? Wander the basement of Turlington Hall and hope for the best.*
+          **Office Hours:** Wednesday 13:00–15:00, and by appointment
+          [Book an appointment](https://calendly.com)
+        
+          </div>
+        
     design:
       columns: '1'
   - block: cta-card
