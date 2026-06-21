@@ -37,8 +37,8 @@ hugoblox:
     pack: "default"
     # Optional: Override theme pack colors
     colors:
-      primary: "" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
-      secondary: ""
+      primary: "#1565c0" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
+      secondary: "#bbdefb"
       neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
     colors_light: {}
@@ -62,8 +62,8 @@ hugoblox:
     # Theme pack: name from data/fonts/
     pack: "modern"
     families:
-      heading: "Roboto"
-      body: "Lato"
+      heading: "Montserrat"
+      body: "Roboto"
 
   # ────────────────────────────────────────────────────────────────────────────
   # LAYOUT

@@ -43,6 +43,16 @@ sections:
     design:
       columns: '1'
   - block: collection
+    id: projects
+    content:
+      title: Projects
+      filters:
+        folders:
+          - projects
+    design:
+      view: article-grid
+      columns: 3
+  - block: collection
     id: papers
     content:
       title: Featured Publications
