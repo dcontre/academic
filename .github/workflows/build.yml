@@ -126,31 +126,48 @@ jobs:
       id: pages
       uses: actions/configure-pages@v6.0.0
 
-    - name: Build with Hugo
-      env:
-        HUGO_ENVIRONMENT: production
-        HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}
-      run: |
-        echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-
-        # Debug: inspect blox partials that are failing (module cache path)
-
+    - name: Build with Hugo  
+      working-directory: ${{ github.workspace }}  
+      env:    
+        HUGO_ENVIRONMENT: production    
+        HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}  
+      run: |    
+        set -euo pipefail
+    
+        echo "WD=$(pwd)"    
+        ls -ld . layouts/_partials/functions || true    
+        id
+        echo "Repo root: $(pwd)"
+        echo "pwd=$(pwd)"
+        ls -la layouts
+        ls -la layouts/_partials
+        ls -la layouts/_partials/functions
+        find . -maxdepth 4 -type d -path "*/layouts/_partials/functions" 2>/dev/null || true
+        find . -maxdepth 4 -type f -name "build_links.html" 2>/dev/null || true
+        ls -la layouts/_partials
+        find layouts/_partials -maxdepth 3 -type d -print
+        find layouts -maxdepth 5 -type f -name 'build_links.html' -print
+        ls -la
+        TARGET="layouts/_partials/functions/build_links.html"    
+        MOD_FILE="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"
+        test -f "$MOD_FILE"
+        mkdir -p "$(dirname "$TARGET")"    
+        cp "$MOD_FILE" "$TARGET"
         
-        BUILD_LINKS=/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html
-
-        echo "== build_links.html (lines 45-70) =="
-        python3 - <<PY
-        path = r"$BUILD_LINKS"
-        with open(path, "r", encoding="utf-8") as f:
-            for i, line in enumerate(f, start=1):
-                if 45 <= i <= 70:
-                    print(f"{i:5d}\\t{line.rstrip()}")
-                if i > 70:
-                    break
+        python3 - <<'PY'
+        import pathlib
+        p = pathlib.Path("layouts/_partials/functions/build_links.html")
+        s = p.read_text(encoding="utf-8")
+        needle = '{{ if not ($seen.Get (printf "set.%s" $keyF)) }}'
+        if needle not in s:
+            raise SystemExit("Did not find the expected needle in build_links.html override.")
+        fix = needle
+        init = '{{ if not ($seen }}{{ $seen = newScratch }}{{ end }}\n' + fix
+        s2 = s.replace(fix, init, 1)
+        p.write_text(s2, encoding="utf-8")
+        print("Patched", p)
         PY
-
-
-
+    
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
 
