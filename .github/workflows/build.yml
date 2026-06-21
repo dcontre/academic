@@ -140,6 +140,10 @@ jobs:
         echo "MOD_FILE=$MOD_FILE"        
         ls -la "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/" || true        
         test -f "$MOD_FILE" && echo "found" || (echo "missing module file" && exit 1)
+        
+        sudo chown -R "$USER":"$USER" layouts || true        
+        sudo chmod -R u+rwX layouts || true
+        
         TARGET="layouts/_partials/functions/build_links.html"        
         mkdir -p "$(dirname "$TARGET")"        
         cp "$MOD_FILE" "$TARGET"
