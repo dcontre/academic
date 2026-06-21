@@ -62,16 +62,16 @@ sections:
           - publications
         exclude_featured: false
     design:
-      view: card
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
+      view: article-grid
+  # - block: collection
+  #   id: talks
+  #   content:
+  #     title: Recent & Upcoming Talks
+  #     filters:
+  #       folders:
+  #         - events
+  #   design:
+  #     view: card
   # - block: collection
   #   id: news
   #   content:
