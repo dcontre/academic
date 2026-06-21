@@ -1,0 +1,3 @@
+h1.font-black.leading-tight {
+  font-weight: 600 !important; /* try 500 (medium) or 700 (bold) too */
+}
