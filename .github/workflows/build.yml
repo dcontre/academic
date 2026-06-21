@@ -148,8 +148,8 @@ jobs:
         find layouts/_partials -maxdepth 3 -type d -print
         find layouts -maxdepth 5 -type f -name 'build_links.html' -print
         ls -la
-        TARGET="layouts/_partials/functions/build_links.html"  
         mkdir -p "$(dirname "$TARGET")"    
+        TARGET="layouts/_partials/functions/build_links.html"  
         MOD_FILE="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"
         test -f "$MOD_FILE"
         cp "$MOD_FILE" "$TARGET"
