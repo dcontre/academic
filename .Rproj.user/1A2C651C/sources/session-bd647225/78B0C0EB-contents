@@ -6,8 +6,4 @@ cascade:
   build:
     render: 
     list: 
-
-title: Dr.
-role: Associate Professor # ...
-image: avatar.png
 ---
