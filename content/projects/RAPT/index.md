@@ -5,8 +5,8 @@ tags:
   - RAPT
 date: "2016-04-27T00:00:00Z"
 authors: 
-- Katherine M Grillo
-- Mary E Prendergast
+- Katherine M. Grillo
+- Mary E. Prendergast
 
 links:
   - type: site
