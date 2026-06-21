@@ -17,10 +17,9 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication metadata — structured fields used by citation styles and BibTeX export.
-publication:
-  name: "Journal of Source Themes"
-  volume: 1
-  issue: 1
+publication: "Journal of Source Themes"
+publication_volume: 1
+publication_issue: 1
 
 peer_reviewed: true
 open_access: true
