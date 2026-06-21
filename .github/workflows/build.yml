@@ -126,44 +126,31 @@ jobs:
       id: pages
       uses: actions/configure-pages@v6.0.0
 
-    - name: Build with Hugo  
-      working-directory: ${{ github.workspace }}  
-      env:    
-        HUGO_ENVIRONMENT: production    
-        HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}  
-      run: |    
+    - name: Build with Hugo
+      env:
+        HUGO_ENVIRONMENT: production
+        HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}
+      run: |
         set -euo pipefail
-        ls -la /home/runner/.cache || true
-        ls -la /home/runner/.cache/hugo_cache || true
-        echo "Build links in cache:"
-        find /home/runner/.cache/hugo_cache -type f -name 'build_links.html' 2>/dev/null | head -n 20 || true
-        echo "Any kit module dirs in cache:"
-        find /home/runner/.cache/hugo_cache -maxdepth 10 -type d -path '*github.com/!hugo!blox/kit*' 2>/dev/null | head -n 20 
+        HUGO_CACHEDIR="$(hugo config | sed -n "s/^cachedir = '\(.*\)'$/\1/p" || true)"
+        if [ -z "${HUGO_CACHEDIR}" ]; then  
+          echo "Could not determine Hugo cachedir from 'hugo config'"  
+          hugo config | cat  
+          exit 1
+        fi
         
-        TARGET="layouts/_partials/functions/build_links.html"  
-        mkdir -p "$(dirname "$TARGET")"    
-        MOD_FILE="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"
-        ls -la "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions" || true
-        ls -la "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials" || true
-        find "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit" -
-        type f -name 'build_links.html' -print | head
-        test -f "$MOD_FILE"
-        cp "$MOD_FILE" "$TARGET"
+        echo "HUGO_CACHEDIR=$HUGO_CACHEDIR"
+        ls -la "$HUGO_CACHEDIR" || true
         
-        python3 - <<'PY'
-        import pathlib
-        p = pathlib.Path("layouts/_partials/functions/build_links.html")
-        s = p.read_text(encoding="utf-8")
-        needle = '{{ if not ($seen.Get (printf "set.%s" $keyF)) }}'
-        if needle not in s:
-            raise SystemExit("Did not find the expected needle in build_links.html override.")
-        fix = needle
-        init = '{{ if not ($seen }}{{ $seen = newScratch }}{{ end }}\n' + fix
-        s2 = s.replace(fix, init, 1)
-        p.write_text(s2, encoding="utf-8")
-        print("Patched", p)
-        PY
-    
+        echo "Searching for build_links.html under Hugo cachedir..."
+        find "$HUGO_CACHEDIR" -type f -name 'build_links.html' 2>/dev/null | head -n 20 || true
+        
+        echo "Searching for kit module paths under Hugo cachedir..."
+        find "$HUGO_CACHEDIR" -maxdepth 10 -type d -path '*github.com/!hugo!blox/kit*' 2>/dev/null | head -n 20 || true
+        
+        echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
+
+        
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
 
