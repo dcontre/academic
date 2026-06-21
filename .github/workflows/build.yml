@@ -133,12 +133,30 @@ jobs:
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
 
-        # Patch module partial via override in repo (fix nil $seen -> SetInMap crash)        TARGET="layouts/_partials/functions/build_links.html"        mkdir -p "$(dirname "$TARGET")"
-        MOD_FILE="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"        cp "$MOD_FILE" "$TARGET"
-        python3 - <<'PY'        import re, pathlib        p = pathlib.Path("layouts/_partials/functions/build_links.html")        s = p.read_text(encoding="utf-8")
-        # Insert a $seen initialization right before the if that calls $seen.Get(...)        needle = '{{ if not ($seen.Get (printf "set.%s" $keyF)) }}'        if needle not in s:            raise SystemExit("Did not find the expected needle in build_links.html override.")
-        fix = '{{ if not ($seen.Get (printf "set.%s" $keyF)) }}'        init = '{{ if not $seen }}{{ $seen = newScratch }}{{ end }}\n' + fix        s2 = s.replace(fix, init, 1)
-        p.write_text(s2, encoding="utf-8")        print("Patched", p)        PY
+        # Patch module partial via override in repo (fix nil $seen -> SetInMap crash)        
+        TARGET="layouts/_partials/functions/build_links.html"        
+        mkdir -p "$(dirname "$TARGET")"
+        MOD_FILE="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"        
+        echo "MOD_FILE=$MOD_FILE"        
+        ls -la "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/" || true        
+        test -f "$MOD_FILE" && echo "found" || (echo "missing module file" && exit 1)
+        TARGET="layouts/_partials/functions/build_links.html"        
+        mkdir -p "$(dirname "$TARGET")"        
+        cp "$MOD_FILE" "$TARGET"
+        python3 - <<'PY'        
+        import re, pathlib        
+        p = pathlib.Path("layouts/_partials/functions/build_links.html")        
+        s = p.read_text(encoding="utf-8")
+        # Insert a $seen initialization right before the if that calls $seen.Get(...)        
+        needle = '{{ if not ($seen.Get (printf "set.%s" $keyF)) }}'        
+        if needle not in s:            
+            raise SystemExit("Did not find the expected needle in build_links.html override.")
+        fix = '{{ if not ($seen.Get (printf "set.%s" $keyF)) }}'        
+        init = '{{ if not $seen }}{{ $seen = newScratch }}{{ end }}\n' + fix        
+        s2 = s.replace(fix, init, 1)
+        p.write_text(s2, encoding="utf-8")        
+        print("Patched", p)        
+        PY
 
 
 
