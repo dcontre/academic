@@ -140,7 +140,8 @@ jobs:
         echo "Repo root: $(pwd)"
         echo "pwd=$(pwd)"
         ls -la layouts
-        ls -la layouts/_partialsls -la layouts/_partials/functions
+        ls -la layouts/_partials
+        ls -la layouts/_partials/functions
         find . -maxdepth 4 -type d -path "*/layouts/_partials/functions" 2>/dev/null || true
         find . -maxdepth 4 -type f -name "build_links.html" 2>/dev/null || true
         ls -la layouts/_partials
