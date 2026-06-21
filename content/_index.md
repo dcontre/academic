@@ -5,6 +5,8 @@ summary: ''
 date: 2022-10-24
 type: landing
 
+cascade: 
+  share: false
 sections:
   - block: resume-biography-3
     content:
