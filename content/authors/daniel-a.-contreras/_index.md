@@ -2,8 +2,6 @@
 # Display name
 title: Daniel A. Contreras
 avatar: avatar.png
-superuser: true
-
 
 # Full name (for SEO)
 first_name: Daniel
