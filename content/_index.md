@@ -129,7 +129,7 @@ sections:
           
           **Office Hours:** Wednesday 13:00–15:00, and by appointment
           
-          [Book an appointment](https://calendly.com)
+          [Book an appointment](https://calendly.com/daniel-contreras-uf/15min)
         
     design:
       columns: '1'
