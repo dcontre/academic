@@ -133,7 +133,7 @@ jobs:
         HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}  
       run: |    
         set -euo pipefail
-    
+        set -x
         echo "WD=$(pwd)"    
         
         TARGET="layouts/_partials/functions/build_links.html"  
