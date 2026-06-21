@@ -49,7 +49,7 @@ image:
 #     url: https://docs.hugoblox.com/guides/slides/
 
 # Link to your Markdown slides
-slides: "example"
+slides: ""
 
 projects: []
 ---
