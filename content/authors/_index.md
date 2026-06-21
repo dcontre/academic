@@ -7,7 +7,4 @@ cascade:
     render: 
     list: 
 
-title: Dr.
-role: Associate Professor # ...
-image: daniel-a.-contreras/avatar.png
 ---
