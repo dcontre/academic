@@ -139,6 +139,10 @@ jobs:
         TARGET="layouts/_partials/functions/build_links.html"  
         mkdir -p "$(dirname "$TARGET")"    
         MOD_FILE="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions/build_links.html"
+        ls -la "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials/functions" || true
+        ls -la "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.12.0/layouts/_partials" || true
+        find "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit" -
+        type f -name 'build_links.html' -print | head
         test -f "$MOD_FILE"
         cp "$MOD_FILE" "$TARGET"
         
