@@ -55,12 +55,15 @@ sections:
       columns: 2
   - block: collection
     content:
-      title: Recent Publications
+      title: All Publications
       text: ''
       filters:
         folders:
           - publications
         exclude_featured: true
+        publication_type: "" # empty = show all  
+        # Add this to group them by year automatically:  
+        index_by: "year" 
     design:
       view: citation
   # - block: collection
