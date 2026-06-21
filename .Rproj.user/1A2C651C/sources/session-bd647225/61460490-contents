@@ -40,7 +40,7 @@ education:
     institution: Stanford University
     start: 2001
     end: 2007
-    icon: 'brands/stanford'
+    icon: 'brands/stanford_logo'
     # summary: |
     #   Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
 #     button:
@@ -51,11 +51,12 @@ education:
     institution: Stanford University
     start: 1997
     end: 1998
+    icon: 'brands/stanford_logo'
   - degree: BA Religion, Certificate in Latin American Studies
     institution: Amherst College
     start: 1992
     end: 1996
-    icon: 'brands/amherst'
+    icon: 'brands/amherst_logo'
 
 experience:
   - role: Assistant Professor of Anthropology

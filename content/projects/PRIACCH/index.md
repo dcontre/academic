@@ -7,7 +7,7 @@ tags:
 date: "2016-04-27T00:00:00Z"
 authors: 
 - John W. Rick
-icon: 'brands/priacch'
+icon: 'brands/priacch_logo'
 
 links:
   - type: site
