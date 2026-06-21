@@ -14,7 +14,7 @@ status:
   icon: "☕️"
 role: Associate Professor of Anthropology
 bio: |
-  Daniel Contreras is an associate professor of Anthropology at the University of Florida. His research interests focus on past human-environment interactions over long timescales.
+  Daniel Contreras is an anthropological archaeologist and associate professor of Anthropology at the University of Florida. His research interests focus on past human-environment interactions over long timescales.
 
 affiliations:
   - name: University of Florida
@@ -32,18 +32,18 @@ links:
     url: https://orcid.org/0000-0002-8127-8789
 
 interests:
-  - Archaeology of the Central Andes 
-  - Geospatial archaeology 
-  - Landscape archaeology 
-  - Digital archaeology 
+  - Archaeology of the Central Andes
+  - Geospatial archaeology
+  - Landscape archaeology
+  - Digital archaeology
 
 education:
   - degree: PhD Anthropological Sciences
     institution: Stanford University
     start: 2001-09
     end: 2007-08
-    summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+    # summary: |
+    #   Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
 #     button:
 #       text: Download dissertation
 #       url: /resume.pdf
@@ -62,7 +62,7 @@ experience:
     org: University of Maryland
     start: 2018
     end: 2019
-    summary: 
+    summary:
 #     button:
 #       text: View portfolio
 #       url: /
