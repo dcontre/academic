@@ -1,5 +1,5 @@
 ---
-title: Programa de Investigación Arqueológica y Conservación Chavín de Huántar
+title: Programa de Investigación Arqueológica y Conservación Chavín de Huántar (PRIACCH)
 subtitle: '*PI*: John Rick (Stanford U)'
 summary: Exploring communal action problems at the 1st millennium BCE monumental center - and World Heritage Site - of Chavín de Huántar in highland Ancash, Peru.
 tags:
