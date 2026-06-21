@@ -60,7 +60,7 @@ sections:
       filters:
         folders:
           - publications
-        exclude_featured: false
+        exclude_featured: true
     design:
       view: article-grid
   # - block: collection
