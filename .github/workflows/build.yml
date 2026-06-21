@@ -133,6 +133,8 @@ jobs:
         HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}  
       run: |    
         set -euo pipefail
+        ls -la /home/runner/.cache || true
+        ls -la /home/runner/.cache/hugo_cache || true
         echo "Build links in cache:"
         find /home/runner/.cache/hugo_cache -type f -name 'build_links.html' 2>/dev/null | head -n 20 || true
         echo "Any kit module dirs in cache:"
