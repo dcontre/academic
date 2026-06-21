@@ -5,8 +5,8 @@ name:
   display: Daniel A. Contreras
   given: Daniel
   family: Contreras
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
+  # alternate: ''  # Example: 王伟
+  # pronunciation: ''  # Example: Wáng Wěi
   # pronouns: he/him
 postnominals:
   - PhD
