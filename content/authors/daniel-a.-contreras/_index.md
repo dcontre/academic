@@ -2,7 +2,7 @@
 # Display name
 title: Daniel A. Contreras
 avatar: "avatar.png"
-url: "/author/daniel-a.-contreras/"
+url: "/authors/daniel-a.-contreras/"
 
 # Full name (for SEO)
 first_name: Daniel
