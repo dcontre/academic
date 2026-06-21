@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/theme-academic-cv/config/_default/params.yaml",
     "project_path": "config/_default/params.yaml",
     "type": "yaml",
-    "hash": "1375328217",
+    "hash": "2101133303",
     "contents": "",
     "dirty": false,
     "created": 1782038815207.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "40,25",
-        "scrollLine": "30"
+        "cursorPosition": "64,22",
+        "scrollLine": "46"
     },
     "folds": "",
-    "lastKnownWriteTime": 1782059830,
+    "lastKnownWriteTime": 1782060945,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1782059830186,
+    "last_content_update": 1782060945371,
     "read_only": false,
     "read_only_alternatives": []
 }

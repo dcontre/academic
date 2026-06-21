@@ -62,7 +62,7 @@ hugoblox:
     # Theme pack: name from data/fonts/
     pack: "modern"
     families:
-      heading: "Montserrat"
+      heading: "Roboto"
       body: "Roboto"
 
   # ────────────────────────────────────────────────────────────────────────────
