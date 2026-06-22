@@ -136,9 +136,9 @@ jobs:
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
 
-    - name: Dump resume-biography-3 affiliations section
+    - name: Dump resume-biography-3 education section
       run: |
-        grep -A 20 "affiliat" /home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/\!hugo\!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/blox/resume-biography-3/block.html
+        grep -A 20 "education" /home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/\!hugo\!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/blox/resume-biography-3/block.html
 
           
     - name: Generate Pagefind search index (if applicable)
