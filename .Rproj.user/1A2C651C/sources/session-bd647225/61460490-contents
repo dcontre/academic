@@ -17,6 +17,7 @@ bio: |
 affiliations:
   - name: University of Florida
     url: https://www.ufl.edu/
+    icon: 'brands/uf_anth'
 
 links:
   - icon: at-symbol
