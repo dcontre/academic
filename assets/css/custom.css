@@ -2,10 +2,17 @@ h1.font-black.leading-tight {
   font-weight: 500 !important; /* try 500 (medium) or 700 (bold) too */
 }
 
-/* Compact education/experience grid */
+/* Compact education/experience grid — 1 col mobile, 2 col md+ */
 #section-resume-biography-3 .grid.grid-cols-1.md\:grid-cols-2.xl\:grid-cols-3.gap-6 {
-  grid-template-columns: 2fr !important;
+  grid-template-columns: 1fr !important;
   gap: 0.375rem !important;
+}
+
+@media (min-width: 768px) {
+  #section-resume-biography-3 .grid.grid-cols-1.md\:grid-cols-2.xl\:grid-cols-3.gap-6 {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.75rem !important;
+  }
 }
 
 #section-resume-biography-3 .group.h-full.flex.flex-col {
@@ -19,4 +26,10 @@ h1.font-black.leading-tight {
 #section-resume-biography-3 .group.h-full.flex.flex-col:hover {
   box-shadow: none !important;
   border: none !important;
+}
+
+/* Force icon circles white regardless of dark-mode override */
+#section-resume-biography-3 .flex-shrink-0.w-12.h-12.rounded-full {
+  background-color: white !important;
+  --tw-ring-color: rgba(255, 255, 255, 0.3) !important;
 }
