@@ -135,20 +135,14 @@ jobs:
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-    - name: Find collection template
-      run: |
-        find /home/runner /tmp -name "*.html" 2>/dev/null \
-          | xargs grep -il "paginate\|paginator\|first 5" 2>/dev/null \
-          | grep -i "hugo\|blox\|cache" \
-          | head -20 || true
 
-    - name: Check effective pagination config
+    - name: Find collection block
       run: |
-        hugo config | grep -i "pager\|paginate"
-    
-    - name: List all blox partials
-      run: |
-        ls /home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/\!hugo\!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/blox/
+        BASE="/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/\!hugo\!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts"
+        echo "=== Root layouts dir ==="
+        ls "$BASE"
+        echo "=== All HTML files ==="
+        find "$BASE" -name "*.html" | sort
 
           
     - name: Generate Pagefind search index (if applicable)
