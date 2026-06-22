@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/theme-academic-cv/content/_index.md",
     "project_path": "content/_index.md",
     "type": "markdown",
-    "hash": "1039860694",
+    "hash": "614120150",
     "contents": "",
     "dirty": false,
     "created": 1781977436546.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "39,10",
-        "scrollLine": "12"
+        "cursorPosition": "44,10",
+        "scrollLine": "28"
     },
     "folds": "",
-    "lastKnownWriteTime": 1782119093,
+    "lastKnownWriteTime": 1782119345,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1782119093460,
+    "last_content_update": 1782119345525,
     "read_only": false,
     "read_only_alternatives": []
 }
