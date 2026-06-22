@@ -1,6 +1,6 @@
 ---
 title: Programa de Investigación Arqueológica y Conservación Chavín de Huántar (PRIACCH)
-summary: 
+
 tags:
   - PRIACCH
 authors: 
