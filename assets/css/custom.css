@@ -29,7 +29,9 @@ h1.font-black.leading-tight {
 }
 
 /* Force icon circles white regardless of dark-mode override */
+/* 
 #section-resume-biography-3 .flex-shrink-0.w-12.h-12.rounded-full {
   background-color: white !important;
   --tw-ring-color: rgba(255, 255, 255, 0.3) !important;
 }
+ */
