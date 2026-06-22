@@ -1,0 +1,31 @@
+---
+title: 'Cleaning & Wrangling Data' 
+summary: 'One of an archaeologist’s most common challenges is struggling with an uncooperative dataset. Sometimes you might have no-oone to blame but yourself, and other times you may be working with existing (published/inherited/“legacy”) data. They might be causing trouble for all sorts of reasons: for example, because they are full of typographical errors, because recording conventions were inconsistent, because they are formatted in a way that R finds inconvenient, or because the units of analysis in which you’re interested differ from those of the initial collector of the data.'  
+subtitle: ' An Introduction to Manipulating Archaeological Data'
+tags:
+  - R for archaeology
+date: '2024-05-22'
+
+# Optional external URL for project (replaces project detail page).
+external_link: 'https://dcontre.github.io/Rchaeology/introduction.html'
+
+image:
+  caption: .
+  focal_point: Smart
+
+links:
+url_code: ''
+url_pdf: ''
+url_slides: ''
+url_video: ''
+
+# Slides (optional).
+#   Associate this project with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#   Otherwise, set `slides = ""`.
+slides: ""
+---
+
+
+
