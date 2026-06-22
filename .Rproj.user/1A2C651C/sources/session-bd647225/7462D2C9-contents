@@ -23,10 +23,18 @@ sections:
         interests: 'Research Interests'
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
-      background:
-        gradient_mesh:
-          enable: true
-
+      # background:
+      #   gradient_mesh:
+      #     enable: true
+        background:
+          image:
+            filename: your-image.jpg
+            filters:
+              brightness: 0.6  # darken slightly so text stays readable
+            size: cover
+            position: center
+            parallax: false
+          text_color_light: true  # use light text over dark image
       # Name heading sizing to accommodate long or short names
       name:
         size: md # Options: xs, sm, md, lg (default), xl
