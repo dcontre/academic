@@ -36,8 +36,8 @@ sections:
             parallax: false
           text_color_light: true  # use light text over dark image
       # Name heading sizing to accommodate long or short names
-      name:
-        size: md # Options: xs, sm, md, lg (default), xl
+        name:
+          size: md # Options: xs, sm, md, lg (default), xl
 
       # Avatar customization
       avatar:
