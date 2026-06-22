@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/theme-academic-cv/config/_default/hugo.yaml",
     "project_path": "config/_default/hugo.yaml",
     "type": "yaml",
-    "hash": "0",
+    "hash": "1645733969",
     "contents": "",
     "dirty": false,
     "created": 1782107437085.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "33,6",
-        "scrollLine": "11"
+        "cursorPosition": "8,54",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1782035600,
+    "lastKnownWriteTime": 1782108796,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1782035600,
+    "last_content_update": 1782108796889,
     "read_only": false,
     "read_only_alternatives": []
 }

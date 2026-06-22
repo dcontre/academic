@@ -53,7 +53,7 @@ sections:
           - projects
     count: 6
     design:
-      view: card
+      view: article-grid
       columns: 3
   - block: collection
     id: papers
@@ -65,7 +65,7 @@ sections:
         featured_only: true
     count: 6
     design:
-      view: card
+      view: article-grid
       columns: 3
   - block: collection
     content:
