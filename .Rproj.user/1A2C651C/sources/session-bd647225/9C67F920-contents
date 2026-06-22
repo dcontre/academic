@@ -27,11 +27,12 @@ bio: My research interests focus on past human-environment interactions over lon
 
 # Interests to show in About widget
 interests:
-  - Archaeology of the Central Andes 
-  - Geospatial archaeology 
-  - Landscape archaeology 
-  - Digital archaeology 
-  - Geoarchaeology
+  - archaeology of the Central Andes
+  - geospatial archaeology
+  - landscape archaeology
+  - digital archaeology
+  - geoarchaeology
+  - archaeological radiocarbon
    
 
 # Education to show in About widget

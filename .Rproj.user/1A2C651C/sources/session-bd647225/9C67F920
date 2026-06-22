@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/theme-academic-cv/content/authors/daniel-a.-contreras/_index.md",
     "project_path": "content/authors/daniel-a.-contreras/_index.md",
     "type": "markdown",
-    "hash": "812887273",
+    "hash": "1537026515",
     "contents": "",
     "dirty": false,
     "created": 1782048560963.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "33,18",
-        "scrollLine": "2"
+        "cursorPosition": "34,30",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1782126741,
+    "lastKnownWriteTime": 1782141918,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1782126741416,
+    "last_content_update": 1782141918176,
     "read_only": false,
     "read_only_alternatives": []
 }

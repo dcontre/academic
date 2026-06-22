@@ -30,11 +30,12 @@ links:
     url: https://orcid.org/0000-0002-8127-8789
 
 interests:
-  - Archaeology of the Central Andes
-  - Geospatial archaeology
-  - Landscape archaeology
-  - Digital archaeology
-  - Geoarchaeology
+  - archaeology of the Central Andes
+  - geospatial archaeology
+  - landscape archaeology
+  - digital archaeology
+  - geoarchaeology
+  - archaeological radiocarbon
 
 education:
   - degree: Associate Professor of Anthropology
@@ -83,6 +84,8 @@ experience:
     summary:
   - role: Postdoctoral Research Fellow
     org: IMBE/GREQAM, Aix-Marseille Université
+    start: 2014
+    end: 2016
   - role: Humboldt Fellow
     org: Kiel University
     start: 2011
