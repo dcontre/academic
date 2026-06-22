@@ -128,10 +128,11 @@ jobs:
 
     - name: Find and dump collection template
       run: |
-        echo "=== Searching for collection templates ==="
-        find ~/.cache/hugo_cache -name "*.html" | xargs grep -l "paginate\|\.Paginate\|first 5" 2>/dev/null | grep -v ".git"
-        echo "=== Directory listing of blox partials ==="
-        find ~/.cache/hugo_cache -path "*/20260527*/_partials" -type d | xargs ls -la 2>/dev/null
+        echo "=== Hugo cache location ==="
+        echo "HUGO_CACHEDIR=$HUGO_CACHEDIR"
+        find ${HUGO_CACHEDIR} -name "*.html" | xargs grep -l "paginate\|\.Paginate\|first 5" 2>/dev/null
+        echo "=== Blox partials directory ==="
+        find ${HUGO_CACHEDIR} -path "*20260527*" -name "*.html" | head -30
     
     - name: Build with Hugo
       env:
