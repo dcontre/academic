@@ -141,9 +141,9 @@ sections:
           
           **Phone:** [+1 352 294 6880](tel:+13522946880)
           
-          **Office:** B346 Turlington Hall, Gainesville, FL 32605
+          **Office:** B346 Turlington Hall, University of Florida, Gainesville, FL 32605
           
-          *Looking for B346? Wander the basement of Turlington Hall and hope for the best.*
+            (*Looking for B346? Wander the basement of Turlington Hall and hope for the best.*)
           
           **Office Hours:** Wednesday 13:00–15:00, and by appointment
           
