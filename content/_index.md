@@ -51,7 +51,7 @@ sections:
       filters:
         folders:
           - projects
-    count: 6
+      count: 6
     design:
       view: article-grid
       columns: 3
@@ -63,7 +63,7 @@ sections:
         folders:
           - publications
         featured_only: true
-    count: 6
+      count: 6
     design:
       view: article-grid
       columns: 3
