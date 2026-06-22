@@ -142,6 +142,14 @@ jobs:
           | grep -i "hugo\|blox\|cache" \
           | head -20 || true
 
+
+    - name: Dump list template
+      run: |
+        echo "=== list.html ===" 
+        cat "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/list.html"
+        echo "=== paginator.html ==="
+        cat "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/components/paginator.html
+
           
     - name: Generate Pagefind search index (if applicable)
       run: |
