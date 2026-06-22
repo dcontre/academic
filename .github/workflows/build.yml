@@ -142,13 +142,13 @@ jobs:
           | grep -i "hugo\|blox\|cache" \
           | head -20 || true
 
-
-    - name: Dump list template
+    - name: Check effective pagination config
       run: |
-        echo "=== list.html ===" 
-        cat "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/list.html"
-        echo "=== paginator.html ==="
-        cat "/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/!hugo!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/components/paginator.html
+        hugo config | grep -i "pager\|paginate"
+    
+    - name: List all blox partials
+      run: |
+        ls /home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/\!hugo\!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/layouts/_partials/blox/
 
           
     - name: Generate Pagefind search index (if applicable)
