@@ -136,9 +136,9 @@ jobs:
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
 
-    - name: Find collection block
+    - name: Dump content-collection block
       run: |
-        find /home/runner/.cache/hugo_cache -path "*20260527*" -name "*.html" | sort
+        cat /home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/\!hugo\!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/blox/content-collection/block.html
 
           
     - name: Generate Pagefind search index (if applicable)
