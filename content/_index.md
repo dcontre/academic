@@ -28,7 +28,7 @@ sections:
       #     enable: true
         background:
           image:
-            filename: puna_llamas.jpg
+            filename: colca_terracing.jpg
             filters:
               brightness: 0.6  # darken slightly so text stays readable
             size: cover
