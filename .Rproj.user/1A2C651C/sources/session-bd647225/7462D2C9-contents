@@ -28,7 +28,7 @@ sections:
       #     enable: true
         background:
           image:
-            filename: your-image.jpg
+            filename: puna_llamas.jpg
             filters:
               brightness: 0.6  # darken slightly so text stays readable
             size: cover
