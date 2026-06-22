@@ -135,6 +135,11 @@ jobs:
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+
+    - name: Dump resume-biography-3 template
+      run: |
+        cat /home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/\!hugo\!blox/kit/modules/blox@v0.0.0-20260527025321-61f41d3667f1/blox/resume-biography-3/block.html
+    
           
     - name: Generate Pagefind search index (if applicable)
       run: |
