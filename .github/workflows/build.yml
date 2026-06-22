@@ -125,12 +125,7 @@ jobs:
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v6.0.0
-
-    - name: Find collection template
-      run: |
-        find /home/runner -name "*.html" 2>/dev/null \
-          | xargs grep -l "Paginate\|first 5" 2>/dev/null \
-          | head -20 || true
+      
     
     - name: Build with Hugo
       env:
@@ -140,7 +135,14 @@ jobs:
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+    - name: Find collection template
+      run: |
+        find /home/runner /tmp -name "*.html" 2>/dev/null \
+          | xargs grep -il "paginate\|paginator\|first 5" 2>/dev/null \
+          | grep -i "hugo\|blox\|cache" \
+          | head -20 || true
 
+          
     - name: Generate Pagefind search index (if applicable)
       run: |
         # Check if site uses Pagefind search
