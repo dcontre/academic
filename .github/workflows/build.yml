@@ -125,35 +125,24 @@ jobs:
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v6.0.0
-
+      
+    
     - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production
         HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}
       run: |
-        set -euo pipefail
-        HUGO_CACHEDIR="$(hugo config | sed -n "s/^cachedir = '\(.*\)'$/\1/p" || true)"
-        if [ -z "${HUGO_CACHEDIR}" ]; then  
-          echo "Could not determine Hugo cachedir from 'hugo config'"  
-          hugo config | cat  
-          exit 1
-        fi
-        
-        echo "HUGO_CACHEDIR=$HUGO_CACHEDIR"
-        ls -la "$HUGO_CACHEDIR" || true
-        
-        echo "Searching for build_links.html under Hugo cachedir..."
-        find "$HUGO_CACHEDIR" -type f -name 'build_links.html' 2>/dev/null | head -n 20 || true
-        
-        echo "Searching for kit module paths under Hugo cachedir..."
-        find "$HUGO_CACHEDIR" -maxdepth 10 -type d -path '*github.com/!hugo!blox/kit*' 2>/dev/null | head -n 20 || true
-        
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-
-        
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+    - name: Find collection template
+      run: |
+        find /home/runner /tmp -name "*.html" 2>/dev/null \
+          | xargs grep -il "paginate\|paginator\|first 5" 2>/dev/null \
+          | grep -i "hugo\|blox\|cache" \
+          | head -20 || true
 
+          
     - name: Generate Pagefind search index (if applicable)
       run: |
         # Check if site uses Pagefind search
