@@ -19,7 +19,7 @@ sections:
         url: uploads/cv.pdf
       headings:
         about: 'Bio'
-        education: ''
+        education: 'Experience and Education'
         interests: 'Research Interests'
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors

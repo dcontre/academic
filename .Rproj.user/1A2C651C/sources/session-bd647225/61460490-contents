@@ -37,6 +37,15 @@ interests:
   - Geoarchaeology
 
 education:
+  - degree: Associate Professor of Anthropology
+    institution: University of Florida
+    start: 2019
+    end:
+    icon: 'brands/uf_anthro'
+  - degree: Assistant Professor of Anthropology
+    institution: University of Maryland
+    start: 2018
+    end: 2019
   - degree: PhD Anthropological Sciences
     institution: Stanford University
     start: 2001
