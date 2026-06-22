@@ -23,7 +23,7 @@ organizations:
     url: https://www.ufl.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests focus on past human-environment interactions over long timescales.
+bio: My research interests focus on past human-environment interactions over long timescales, particularly in the Central Andes.
 
 # Interests to show in About widget
 interests:
@@ -31,6 +31,7 @@ interests:
   - Geospatial archaeology 
   - Landscape archaeology 
   - Digital archaeology 
+  - Geoarchaeology
    
 
 # Education to show in About widget
