@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/theme-academic-cv/data/authors/daniel-a.-contreras.yaml",
     "project_path": "data/authors/daniel-a.-contreras.yaml",
     "type": "yaml",
-    "hash": "1064035579",
+    "hash": "1775907041",
     "contents": "",
     "dirty": false,
     "created": 1782068521538.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "19,25",
-        "scrollLine": "5"
+        "cursorPosition": "67,26",
+        "scrollLine": "43"
     },
     "folds": "",
-    "lastKnownWriteTime": 1782127526,
+    "lastKnownWriteTime": 1782128555,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1782127526695,
+    "last_content_update": 1782128555986,
     "read_only": false,
     "read_only_alternatives": []
 }

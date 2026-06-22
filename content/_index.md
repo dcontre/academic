@@ -26,23 +26,29 @@ sections:
       # background:
       #   gradient_mesh:
       #     enable: true
-        background:
-          image:
-            filename: Bonneville_cutbanks.jpg
-            filters:
-              brightness: 0.6  # darken slightly so text stays readable
-            size: cover
-            position: center
-            parallax: false
-          text_color_light: true  # use light text over dark image
+      background:
+        image:
+          filename: Bonneville_cutbanks.jpg
+          filters:
+            brightness: 0.6  # darken slightly so text stays readable
+          size: cover
+          position: center
+          parallax: false
+        text_color_light: true  # use light text over dark image
       # Name heading sizing to accommodate long or short names
-        name:
-          size: md # Options: xs, sm, md, lg (default), xl
+      name:
+        size: md # Options: xs, sm, md, lg (default), xl
 
       # Avatar customization
-        avatar:
-          size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-          shape: circle # Options: circle (default), square, rounded
+      avatar:
+        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        shape: circle # Options: circle (default), square, rounded
+  - block: resume-experience
+    content:
+      username: daniel-a.-contreras
+    design:
+      date_format: '2006'
+      is_education_first: false
   - block: markdown
     content:
       title: '📚 My Research'

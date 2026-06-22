@@ -17,7 +17,6 @@ bio: |
 affiliations:
   - name: University of Florida
     url: https://www.ufl.edu/
-    icon: 'brands/uf_anth'
 
 links:
   - icon: at-symbol
@@ -61,6 +60,12 @@ education:
     icon: 'brands/amherst_logo'
 
 experience:
+  - role: Associate Professor of Anthropology
+    org: University of Florida
+    start: 2019
+    end: ''
+    summary:
+    icon: 'brands/uf_anth'
   - role: Assistant Professor of Anthropology
     org: University of Maryland
     start: 2018
@@ -70,11 +75,7 @@ experience:
 #       text: View portfolio
 #       url: /
 #       icon: hero/arrow-down-tray
-#   - role: AI Research Intern
-#     org: OpenAI
-#     start: 2019-06-01
-#     end: 2019-12-31
-#     summary: |
+
 
 # skills:
 #   - name: Technical Skills
