@@ -40,7 +40,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I am an anthropological archaeologist and associate professor of Anthropology at the University of Florida. My research interests focus on past human-environment interactions over long timescales.
+        I am an anthropological archaeologist and associate professor of Anthropology at the University of Florida. My research interests focus on past human-environment interactions over long timescales, primarily in the Central Andes.
 
     design:
       columns: '1'
@@ -134,6 +134,10 @@ sections:
           **Office Hours:** Wednesday 13:00–15:00, and by appointment
           
           [Book an appointment](https://calendly.com/daniel-contreras-uf/15min)
+          
+      coordinates:
+        latitude: ' 29.649331'
+        longitude: '-82.344014'  
         
     design:
       columns: '1'
