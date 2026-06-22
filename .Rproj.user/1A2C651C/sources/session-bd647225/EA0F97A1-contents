@@ -16,9 +16,11 @@ sections:
     content:
       title: Courses
       filters:
-        tag: Course
-        kinds:
-          - section
+        folders:
+          - courses
+        # tag: Course
+        # kinds:
+        #   - section
     design:
       view: article-grid
       show_read_time: false
