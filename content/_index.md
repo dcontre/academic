@@ -28,7 +28,7 @@ sections:
       #     enable: true
         background:
           image:
-            filename: colca_terracing.jpg
+            filename: BonnevilleBasin_rainbow.jpg
             filters:
               brightness: 0.6  # darken slightly so text stays readable
             size: cover
