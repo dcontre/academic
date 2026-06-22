@@ -1,10 +1,8 @@
 ---
 title: Programa de Investigación Arqueológica y Conservación Chavín de Huántar (PRIACCH)
-subtitle: 
 summary: 
 tags:
   - PRIACCH
-date: "2016-04-27T00:00:00Z"
 authors: 
 - John W. Rick
 icon: 'brands/priacch_logo'
