@@ -46,6 +46,7 @@ education:
     institution: University of Maryland
     start: 2018
     end: 2019
+    icon: 'brands/maryland_logo'
   - degree: PhD Anthropological Sciences
     institution: Stanford University
     start: 2001
