@@ -1,7 +1,0 @@
-schema: hugoblox/author/v1
-slug: john-w.-rick
-is_owner: fals
-name:
-  display: John W. Rick
-  given: John
-  family: Rick

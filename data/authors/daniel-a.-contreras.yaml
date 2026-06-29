@@ -53,6 +53,11 @@ education:
     start: 2014
     end: 2016
     icon: 'brands/imbe_logo'
+  - degree: Humboldt Fellow
+    institution: CAU Kiel
+    start: 2011
+    end: 2013
+    icon: 'brands/kiel_logo'
   - degree: PhD Anthropological Sciences
     institution: Stanford University
     start: 2001
