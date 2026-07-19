@@ -9,6 +9,7 @@ authors:
 - Matt Sayre
 - John Wolf
 date: '2009-01-01'
+doi: 10.18800/boletindearqueologiapucp.200901.003 
 publishDate: '2024-04-15T00:02:17.056845Z'
 publication_types:
 - article-journal

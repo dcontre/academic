@@ -9,6 +9,7 @@ authors:
 - Marta Dal Corso
 - Cheryl A Makarewicz
 date: '2014-01-01'
+doi: 10.1016/j.jaridenv.2014.06.002 
 publishDate: '2024-04-15T00:02:16.811775Z'
 publication_types:
 - article-journal

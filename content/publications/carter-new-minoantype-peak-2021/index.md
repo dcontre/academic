@@ -11,6 +11,7 @@ authors:
 - Georgia Tsartsidou
 - Dimitris Athanasoulis
 date: '2021-01-01'
+doi: 10.32028/9781789698886-5 
 publishDate: '2024-04-15T00:02:16.756326Z'
 publication_types:
 - article-journal
