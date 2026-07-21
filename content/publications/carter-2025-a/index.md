@@ -21,7 +21,7 @@ abstract: This article provides the first detailed overview of Middle Paleolithi
   almost exclusively to resource extraction and the initial stages of tool production.
   The Middle Paleolithic material from Stelida reflects a wider range of hominin behavior,
   including not only evidence for various knapping traditions (not least Levallois and discoidal core technologies) but also two concentrations of target products, including retouched tool types. The article argues that this greater breadth of practice relates to Stelida’s landscape affordances, namely the presence of springs and rock shelters that facilitated the establishment of seasonal camps, where those procuring chert likely engaged in food preparation, consumption, and tool maintenance.
-doi: https://doi.org/10.5325/jeasmedarcherstu.13.1-2.0032
+doi: 10.5325/jeasmedarcherstu.13.1-2.0032
 projects: 
 - SNAP
 tags: 
