@@ -38,6 +38,7 @@ authors:
 - Alice Williams
 date: '2022-01-01'
 publishDate: '2026-07-21T08:36:01.308366Z'
+doi: 10.3390/su141610234
 publication_types:
 - article-journal
 publication: '*Sustainability*'
