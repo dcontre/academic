@@ -61,6 +61,15 @@ jobs:
             exit 1
           fi
           echo "✅ publications.bib file found"
+
+
+      - name: Clear existing publications
+        if: ${{ hashFiles('publications.bib') != '' }}
+        run: |
+          echo "🧹 Clearing existing publications..."
+          rm -rf content/publications/
+          mkdir -p content/publications/
+
           
       - name: Run Academic (Bibtex To Markdown Converter)
         # Check `.bib` file exists for case when action runs on `.bib` deletion
