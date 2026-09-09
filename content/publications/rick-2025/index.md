@@ -16,21 +16,7 @@ publication_types:
 publication: '*Proceedings of the National Academy of Sciences*'
 featured: true
 doi: 10.1073/pnas.2425125122
-abstract: Ritual is broadly accepted as an important locus of social interaction in
-  the pre-Hispanic Central Andes, and research into the development of durable sociopolitical
-  inequality in the region often focuses on the social and political roles of public
-  rituals. At the Middle-Late Formative Period (ca. 1200--400 BCE) monumental center
-  of Chavín de Huántar, as well as at contemporary sites, ritual has long been hypothesized
-  to include the use of psychoactive plants. However, neither psychoactive plant remains
-  nor chemical traces of psychoactive compounds in likely ritual contexts have been
-  identified at any of these sites. Recently excavated deposits sealed in an underground
-  gallery at Chavń contained twenty-three artifacts of forms (especially bone tubes)
-  associated with consumption of psychoactive plants elsewhere in the region. We here
-  report, based on independent microbotanical and chemical analyses, two kinds of
-  direct evidence for use of psychoactive plants in institutionalized ritual at Chav'.́
-  These results are direct evidence of psychoactive plants in archaeological bone
-  tubes used as inhalers and the northernmost direct evidence of vilca and Nicotiana
-  use in the pre-Hispanic Andes.
+abstract: Ritual is broadly accepted as an important locus of social interaction in the pre-Hispanic Central Andes, and research into the development of durable sociopolitical inequality in the region often focuses on the social and political roles of public rituals. At the Middle-Late Formative Period (ca. 1200--400 BCE) monumental center of Chavín de Huántar, as well as at contemporary sites, ritual has long been hypothesized to include the use of psychoactive plants. However, neither psychoactive plant remains nor chemical traces of psychoactive compounds in likely ritual contexts have been identified at any of these sites. Recently excavated deposits sealed in an underground gallery at Chavń contained twenty-three artifacts of forms (especially bone tubes) associated with consumption of psychoactive plants elsewhere in the region. We here report, based on independent microbotanical and chemical analyses, two kinds of direct evidence for use of psychoactive plants in institutionalized ritual at Chavín. These results are direct evidence of psychoactive plants in archaeological bone tubes used as inhalers and the northernmost direct evidence of vilca and *Nicotiana* use in the pre-Hispanic Andes.
 tags: 
 - Chavín
 - Central Andes
