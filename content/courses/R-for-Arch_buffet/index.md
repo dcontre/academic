@@ -6,7 +6,7 @@ tags:
 date: '2026-09-22'
 
 # Optional external URL for project (replaces project detail page).
-external_link: 'https://dcontre.github.io/DataWrangling_notes/introduction.html'
+external_link: 'https://dcontre.github.io/R-for-Archaeology-Buffet/introduction.html'
 
 content_meta:
   content_type: 'Workshop'
