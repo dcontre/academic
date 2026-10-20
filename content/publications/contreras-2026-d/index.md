@@ -9,4 +9,13 @@ publishDate: '2026-10-20T11:44:07.564673Z'
 publication_types:
 - paper-conference
 publication: '*Paleoamerican Odyssey*'
+projects: 
+- GB14C
+tags: 
+- Great Basin
+- landscape taphonomy
+- radiocarbon 
+image:
+  focal_point: ""
+  preview_only: false
 ---
